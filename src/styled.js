@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
+import backTeatro from './assets/img/backTeatro.png';
 
 export const Button = styled.button`
     background: ${props => props.primary ? "#75cfb8" : "#596e79"};
@@ -12,18 +12,22 @@ export const Button = styled.button`
   
 `;
 
-
 export const Container = styled.div`
-   padding: 5rem;
-   background-color:#75cfb8;
+   padding: 2rem;
+   background-image:url(${backTeatro});
    height: 100vh;
+   background-position: center;
+   max-width:100vw;
+   background-size:cover;
   
 `;
 
 export const Jumbotron = styled.div`
     background-color: #bbdfc8;
     color: #596e79;
-    padding: 5rem;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-right: 10rem;
   
 `;
 
@@ -33,6 +37,8 @@ export const Guion = styled.p`
     padding:1rem;
 
 `;
+
+
 
 
 

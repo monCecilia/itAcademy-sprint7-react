@@ -1,15 +1,10 @@
-import React, { useState } from "react"
-import data from './assets/data'
-import styled from 'styled-components'
-import { Button, Container, Jumbotron, Guion } from './styled'
-
-
-
+import React, { useState } from "react";
+import data from './assets/data/data';
+import { Button, Container, Jumbotron, Guion } from './styled';
 
 function App() {
-  
-  
-  const [currentText, setText] = useState(0)
+const [currentText, setText] = useState(0)
+
 
   //Funcion boton siguiente
   const nextButton = () => {
@@ -23,17 +18,9 @@ function App() {
         setText(currentText - 1);
     }
   }
-
-  // const basicStyles = {
-  //   backgroundColor: "#bbdfc8",
-  //   color: "#596e79"
-  // }
-
-    return (
-      
+    return ( 
       <main>
         <Container>
-
           <Jumbotron>
             <h1 className="display-4">Romeo&Julieta</h1>
             <h1 className="display-5">¡Comencemos a conocer su historia!</h1>
@@ -44,11 +31,10 @@ function App() {
           </Jumbotron>
 
         </Container>
-       
       </main>
     
     );
 
 }
-
 export default App;
+
