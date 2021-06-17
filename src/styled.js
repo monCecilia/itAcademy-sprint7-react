@@ -13,21 +13,33 @@ export const Button = styled.button`
 `;
 
 export const Container = styled.div`
-   padding: 2rem;
    background-image:url(${backTeatro});
    height: 100vh;
    background-position: center;
-   max-width:100vw;
+   width:100vw;
    background-size:cover;
+   padding:2rem;
+	@media only screen and (min-width: 768px) {
+        padding: 2rem;
+	}
   
 `;
 
 export const Jumbotron = styled.div`
     background-color: #bbdfc8;
     color: #596e79;
-    padding: 3rem;
-    margin-top: 3rem;
-    margin-right: 10rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    
+    @media only screen and (min-width: 768px) {
+        padding: 3rem;
+        margin-top: 10rem;
+        margin-right: 10rem;
+       
+	}
+    @media only screen and (min-width: 768px) {
+        max-width:60vw;
+	}
   
 `;
 

@@ -22,7 +22,7 @@ const [currentText, setText] = useState(0)
       <main>
         <Container>
           <Jumbotron>
-            <h1 className="display-4">Romeo&Julieta</h1>
+            <h1 className="display-4">Romeo y Julieta</h1>
             <h1 className="display-5">¡Comencemos a conocer su historia!</h1>
             <p className="lead">Para recorrer el guión pulsa los botones</p>
             <Guion>{data[currentText]} </Guion>
